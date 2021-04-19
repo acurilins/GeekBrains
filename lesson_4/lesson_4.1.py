@@ -1,10 +1,6 @@
 from sys import argv
 
-def salary():
-    try:
-        time, rate, bonus = map(float, argv[1:])
-        print(f"Salary - {time * rate + bonus}")
-    except ValueError:
-        print("Введите 3 числа. Не строки и Не пустой ввод")
+salary, hours, rate, bonus = argv
 
-salary()
+calc = (float(hours) * float(rate)) + float(bonus)
+print(f"Gross Salary:\n{calc}")
