@@ -1,3 +1,4 @@
+#Своровано ))
 from functools import reduce
 
 
